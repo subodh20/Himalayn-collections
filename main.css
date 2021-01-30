@@ -1,0 +1,243 @@
+html,
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+}
+/*===========Typography==========*/
+h1 {
+  font-family: "Times New Roman";
+  font-weight: bold;
+  font-size: 2rem;
+}
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+.text-over-img {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.main-contact-img img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+/*=========layout=========*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  text-align: center;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+}
+.feature-image {
+  background: #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+}
+.text-btn {
+  text-align: center;
+}
+.shop-btn {
+  border-radius: 1rem;
+  background-color: blue;
+}
+.shop-btn:hover {
+  transform: scale(2);
+  background-color: cornsilk;
+}
+
+/* design for shop.html page*/
+.container-shop h2 {
+  background: #e5e5e5;
+  width: 11.5rem;
+  padding: 0.4em;
+  height: 3rem;
+  font-size: 700;
+  margin: 1em 0;
+}
+.col-md-3 {
+  margin: 0 auto;
+}
+.product-bottom .fa {
+  color: rgb(58, 99, 58);
+  font-size: 0.8rem;
+}
+.product-bottom h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.product-bottom h5 {
+  font-size: 0.9rem;
+  font-weight: 0.9em;
+}
+.overlay {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  margin-left: 0;
+  width: 4.5rem;
+}
+.product-top:hover .overlay {
+  opacity: 1;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+.overlay .fa {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000000;
+  height: 2rem;
+  width: 2rem;
+}
+.overlay .btn-secondary {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/*=========navigation==========*/
+nav,
+.cart-items,
+.sub-nav {
+  margin-top: 1em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  margin-left: 1em;
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.1em;
+}
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+  text-decoration: none;
+}
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+.current-page:hover {
+  color: #000000;
+}
+.sub-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.sub-nav li {
+  margin-right: 1em;
+  font-weight: 700;
+}
+.sub-nav a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.1em;
+}
+.sub-nav a:hover,
+.sub-nav a:focus {
+  color: #1792d2;
+  text-decoration: none;
+}
+.active-page {
+  border-bottom: 1px solid #707070;
+}
+/*---------Images-------*/
+img:hover,
+img:focus {
+  opacity: 0.5;
+  transition: 0.9s;
+}
+.category-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+.container-shop img {
+  width: 100%;
+}
+.footer-container {
+  background: #1f1c1c;
+  color: #fff;
+}
+.footer-bottom {
+  background: #343a40;
+  color: #686868;
+  text-align: center;
+  height: 5vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 0.3em;
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-section {
+  margin-top: 1em;
+}
+.footer-section a {
+  color: #fff;
+  display: block;
+}
+.footer-section a:hover,
+.footer-section a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 1206px) {
+  .container-nav,
+  .category-items {
+    flex-direction: column;
+  }
+  .category-items {
+    background: #e5e5e5;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .gallery {
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+  }
+}
+@media (max-width: 750px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
